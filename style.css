@@ -1,0 +1,84 @@
+/* Variables declared here - these are the colors for our pages, as well as the font stack and sizes */
+
+:root {
+  --black: #262a30;
+  --background-body: #efe8d4;
+  --copper: #ed8b00;
+  --green: #1d3c34;
+  --maroon: #70002e;
+  --sky: #bbdde6;
+  --font-size: 1.3rem;
+  --mono: "Oxygen mono", monospace;
+  --sans: "Roboto", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--sans);
+  background-color: var(--background-body);
+  color: var(--black);
+  font-size: var(--font-size);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a {
+  color: var(--maroon);
+}
+
+a:hover {
+  color: var(--copper);
+}
+
+/* Intro styles */
+
+#intro {
+  padding-bottom: 10rem;
+}
+
+intro p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#intro.name {
+  font-family: var(--mono);
+}
+
+.name span {
+  font-family: var(--sans);
+  font-size: 4rem;
+  color: var(--maroon);
+  display: block;
+}
+
+#intro h2 {
+  font-size: 4rem;
+  font-weight: normal;
+}
+
+#contact {
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+#contact p:last-child {
+  margin-top: 3rem;
+}
